@@ -17,7 +17,7 @@ As someone preparing for jeopardy, Ryan wants to keep track of score
 
 As someone who is playing this game with little time, samy wants a simple game with questions.
 
-As someone who wants to learn more, Ryan want the answers to the questions she got wrong.
+As someone who wants to learn more, Ryan want the answers to the questions he got wrong.
 
 
 
@@ -25,7 +25,7 @@ Stretch goals
 
 
 
-As someone who is achievement-driven, ryan wants a score so he can see how she's doing.
+As someone who is achievement-driven, ryan wants a score so he can see how he's doing.
 
 As someone who is likes to compete, samy wants a leader board so she can see how she compares to others.
 
