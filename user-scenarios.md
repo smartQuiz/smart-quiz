@@ -31,4 +31,4 @@ As someone who is likes to compete, samy wants a leader board so she can see how
 
 As someone who like to test knowledge, Ryan wants to be able difficulty of questions
 
-As someone likes surprise, sami would like to see bonus questions.
+As someone likes surprise, samy would like to see bonus questions.
