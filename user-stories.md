@@ -16,9 +16,7 @@
 
 * As a pop-culture enthusiast I want to see if there are new things to learn about my favorite subject.
 
-* As a marketing executive, I want to know what people want and how can I sell things to them.
-
-
+* As a busy mom who only talks to children all day I want a game to test my brain and keep it sharp so I remember how to talk to adults when I encounter them.
 
 
 ## MVP
@@ -34,12 +32,14 @@ travel/geography
 
 
 
-As someone who is achievement-driven, Ryan wants a score so he can see how he's doing.
+* As someone who is achievement-driven, Ryan wants a score so he can see how he's doing.
 
-As someone who is likes to compete, Sammy wants a leader board so she can see how she compares to others.
+* As someone who is likes to compete, Sammy wants a leader board so she can see how she compares to others.
 
-As someone who like to test knowledge, Ryan wants to be able to increase the difficulty of questions
+* As someone who like to test knowledge, Ryan wants to be able to increase the difficulty of questions
 
-As someone who likes surprise, Sammy would like to see bonus questions.
+* As someone who likes surprise, Sammy would like to see bonus questions.
 
-Add two sections for movie characters and PacificNorthWest
+* Add two sections for movie characters and PacificNorthWest
+
+* As a marketing executive, I want to know what people want and how can I sell things to them.
