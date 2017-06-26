@@ -1,4 +1,4 @@
-User  Scenario
+# User  Scenarios
 
 
 Samy is from Maryland. She also like to learn about different topics. She would like to learn more and keep testing her knowledge. She likes to use her phone, computer and ipad. She is likely to play short games while waiting for her daughter to finish dance class.
@@ -6,29 +6,12 @@ Samy is from Maryland. She also like to learn about different topics. She would 
 Ryan is from Texas. He wants to be on jeopardy.  He wants to be able to answer a variety of random questions.
 He is most likely to play games on he mobile device on breaks. He would like to pick and choose what topics to study.
 
+Lea is from New York. She would like to travel to Africa and have a Safari adventure. She wants the quiz to teach her more information about the animals and the African savannah. She also wants to have other topics as well.
 
-User stories
+Mike is a football fan. He follow all the games very closely. He would like to take the quiz to make sure he have all the facts about his favorite team.
 
-MVP
+Sabrina is a big fan of movies, and every weekend she follow closely what is coming up on the big screen. She wants to take the quiz to learn more about her favorite movie characters and the stories behind her favorite movies.
 
-As a trivia game lover, Samy wants more than one category, in order to test her knowledge.
+John is a big fan of Geography, and always try to learn new subjects. He would like to take the quiz test, to see if he will score high and possibly learn something new.
 
-As someone preparing for jeopardy, Ryan wants to keep track of score
-
-As someone who is playing this game with little time, samy wants a simple game with questions.
-
-As someone who wants to learn more, Ryan want the answers to the questions he got wrong.
-
-
-
-Stretch goals
-
-
-
-As someone who is achievement-driven, ryan wants a score so he can see how he's doing.
-
-As someone who is likes to compete, samy wants a leader board so she can see how she compares to others.
-
-As someone who like to test knowledge, Ryan wants to be able difficulty of questions
-
-As someone likes surprise, samy would like to see bonus questions.
+Melanie is a huge fan of pop culture. Whenever her favorite band is in town, she will always be in a front row seat. She wants to take this quiz to get the latest news on her favorite band. She wants to have a score at the end, to see check her performance. 
