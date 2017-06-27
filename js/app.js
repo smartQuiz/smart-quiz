@@ -5,7 +5,7 @@ var categoryImg = [];
 
 
 function User(name, score) {
-  this.imgName = imgName;
+  this.name = name;
   this.path = score;
 };
 
