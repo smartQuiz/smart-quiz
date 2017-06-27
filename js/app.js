@@ -147,8 +147,18 @@ function clickHandler() {
   //add the two button for the score and to reset:
   var resetButton = document.createElement('button');
   resetButton.innerHTML = 'Reset';
+
+  //set the reset button to reload the page
+  resetButton.addEventListener('click', function() {
+    location.reload();
+  });
+
+  //set the score button to take us to score page
   var scoreButton = document.createElement('button');
   scoreButton.innerHTML = 'Score';
+  scoreButton.addEventListener('click', function() {
+    window.location.href = 'scoreboard.html';
+  });
   parentElement.append(resetButton);
   parentElement.append(scoreButton);
 }
