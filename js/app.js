@@ -1,4 +1,5 @@
 
+
 'use strict';
 
 var categoryImg = [];
@@ -18,3 +19,4 @@ function ImageForCat(imgName, path, category) {
 new ImageForCat('sports', 'img/sports.jpg', 'sports');
 new ImageForCat('geography', 'img/geography.jpg', 'geography');
 new ImageForCat('pop-culture', 'img/popculture.jpg', 'popculture');
+
