@@ -3,7 +3,9 @@
 var categoryImg = [];
 var parentElement;
 var imageParent;
+// var userNameID;
 var score = 0;
+var userName;
 var buttonParentElement;
 var clicked;
 var sportInputs = [];
@@ -41,7 +43,7 @@ var popAnswers = ['taylor swift', 'penny', 'dragons', 'jennifer lawrence', 'bow 
 var popIds = ['taylorswift', 'penny', 'dragons', 'jenniferlawrence', 'bowties'];
 
 //create a user and grab it from the welcome page
-var user = document.getElementById('userName');
+// var user = document.getElementById('userName');
 
 
 
@@ -239,7 +241,7 @@ quizForm.addEventListener('submit', function(event) {
   setScoreStorage();
 });
 
-//========================================RESET AND RELOAD BUTTON===============================================
+//=================================RESET AND RELOAD BUTTON========================================
 
 buttonParentElement = document.getElementById('buttons');
 //add the two button for the score and to reset:
@@ -260,14 +262,38 @@ scoreButton.addEventListener('click', function() {
 buttonParentElement.append(resetButton);
 buttonParentElement.append(scoreButton);
 
-//=============================GET INPUT DATAT AND SAVE SCORE=========================================
+var parsedScore;
+var storageScore;
+var stringifiedScore;
+//=============================LOCAL STORAGE=========================================
 // to set to local storage
-function setScoreStorage () {
-  var stringifiedScore = JSON.stringify(score);
-  localStorage.setItem('score', stringifiedScore);
-  var storageScore = localStorage.getItem('score');
-  var parsedScore = JSON.parse(storageScore);
+function setScoreStorage() {
+
+  var stringedUserObject = localStorage.getItem(userName);
+  var parsedUserObject = JSON.parse(stringedUserObject);
+  console.log(parsedUserObject);
+
+
+
+  // stringifiedScore = JSON.stringify(score);
+  // localStorage.setItem('score', stringifiedScore);
+  // storageScore = localStorage.getItem('score');
+  // parsedScore = JSON.parse(storageScore);
+  // =============================USER CONSTRUCTOR=========================================
+  // function User(name, score) {
+  //   this.name = localStorage.getItem('name'),
+  //   this.score = score;
+  // };
+  // var newUser = new User();
   return parsedScore;
+}
+
+function setUserStorage(userName) {
+  //set the user name to local storage
+  var stringfiedUser = JSON.stringify(userName);
+  userName = localStorage.getItem('userName');
+  var parsedUser = JSON.parse(userName);
+  return parsedUser;
 }
 // to get from storage
 // function getScoreStorage () {
@@ -309,12 +335,6 @@ function setScoreStorage () {
 //
 
 
-function User(name, score, correct, wrong) {
-  this.name = name,
-    this.score = score,
-    this.correct = 0,
-    this.wrong = 0;
-};
 
 function ImageForCat(imgName, path, category) {
   this.imgName = imgName;
