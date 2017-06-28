@@ -236,24 +236,7 @@ quizForm.addEventListener('submit', function(event) {
     console.log(egypt);
     console.log(thegreatwall);
   }
-
-
-
-
-
-
-
-
-
-  // var answer = event.target.Germany.value;
-  // var label = document.createElement('label');
-  // label.textContent = answer;
-  // if (answer === 'Germany') {
-  //   score++;
-
-  // parentElement.append(label);
-
-
+  setScoreStorage();
 });
 
 //========================================RESET AND RELOAD BUTTON===============================================
@@ -278,31 +261,22 @@ buttonParentElement.append(resetButton);
 buttonParentElement.append(scoreButton);
 
 //=============================GET INPUT DATAT AND SAVE SCORE=========================================
+// to set to local storage
+function setScoreStorage () {
+  var stringifiedScore = JSON.stringify(score);
+  localStorage.setItem('score', stringifiedScore);
+  var storageScore = localStorage.getItem('score');
+  var parsedScore = JSON.parse(storageScore);
+  return parsedScore;
+}
+// to get from storage
+// function getScoreStorage () {
+//   // storageScore = localStorage.getItem('score');
+//   var parsedScore = JSON.parse(storageScore);
+//   return parsedScore;
+// }
 
 
-// var submitButton = document.getElementById('quiz');
-//
-// submitButton.addEventListener('submit', function(){
-//
-//   //first quiz
-//
-//   var germany = event.target.Germany.value;
-//   console.log(germany);
-//
-// });
-
-
-
-
-
-
-
-
-// parentElement = document.getElementById('quiz');
-//   var p = document.createElement('p');
-//   p.textContent = sports[0].q1;
-//   parentElement.append(p);
-// sports[0].q1
 
 
 //===================================================================
