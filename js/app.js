@@ -114,7 +114,6 @@ function popQuiz() {
     parentElement.append(label);
     parentElement.append(text);
 
-
   }
 }
 
