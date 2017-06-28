@@ -36,11 +36,11 @@ function sportQuiz() {
 
     console.log(text.id);
 
-    var p = document.createElement('p');
+    var label = document.createElement('label');
 
-    p.textContent = sportsQuestions[i];
+    label.textContent = sportsQuestions[i];
 
-    parentElement.append(p);
+    parentElement.append(label);
     parentElement.append(text);
 
   }
@@ -71,11 +71,11 @@ function travelQuiz() {
 
     console.log(text.id);
 
-    var p = document.createElement('p');
+    var label = document.createElement('label');
 
-    p.textContent = travelQuestions[i];
+    label.textContent = travelQuestions[i];
 
-    parentElement.append(p);
+    parentElement.append(label);
     parentElement.append(text);
 
   }
@@ -107,11 +107,11 @@ function popQuiz() {
 
     console.log(text.id);
 
-    var p = document.createElement('p');
+    var label = document.createElement('label');
 
-    p.textContent = popQuestions[i];
+    label.textContent = popQuestions[i];
 
-    parentElement.append(p);
+    parentElement.append(label);
     parentElement.append(text);
 
 
@@ -169,12 +169,12 @@ function clickHandler() {
   //set the submit answers button to intake answers
   submitButton.addEventListener('click', function(event) {
     var answer = event.target.Germany.value;
-    var p = document.createElement('p');
-    p.textContent = answer;
+    var label = document.createElement('label');
+    label.textContent = answer;
     if (answer === 'Germany') {
       score++;
     }
-    parentElement.append(p);
+    parentElement.append(label);
     console.log(answer);
     console.log(event.target);
   });
