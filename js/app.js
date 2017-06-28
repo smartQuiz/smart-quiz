@@ -4,7 +4,7 @@ var categoryImg = [];
 var parentElement;
 var imageParent;
 var score = 0;
-
+var buttonParentElement;
 
 
 //create a user and grab it from the welcome page
@@ -145,22 +145,22 @@ function clickHandler() {
     imageParent.removeEventListener('click', clickHandler);
   }
   //add the two button for the score and to reset:
-  var resetButton = document.createElement('button');
-  resetButton.innerHTML = 'Reset';
-
-  //set the reset button to reload the page
-  resetButton.addEventListener('click', function() {
-    location.reload();
-  });
-
-  //set the score button to take us to score page
-  var scoreButton = document.createElement('button');
-  scoreButton.innerHTML = 'Score';
-  scoreButton.addEventListener('click', function() {
-    window.location.href = 'scoreboard.html';
-  });
-  parentElement.append(resetButton);
-  parentElement.append(scoreButton);
+  // var resetButton = document.createElement('button');
+  // resetButton.innerHTML = 'Reset';
+  //
+  // //set the reset button to reload the page
+  // resetButton.addEventListener('click', function() {
+  //   location.reload();
+  // });
+  //
+  // //set the score button to take us to score page
+  // var scoreButton = document.createElement('button');
+  // scoreButton.innerHTML = 'Score';
+  // scoreButton.addEventListener('click', function() {
+  //   window.location.href = 'scoreboard.html';
+  // });
+  // parentElement.append(resetButton);
+  // parentElement.append(scoreButton);
 
   var submitButton = document.createElement('button');
   submitButton.innerHTML = 'Submit Answers';
@@ -176,9 +176,29 @@ function clickHandler() {
     parentElement.append(label);
     console.log(answer);
     console.log(event.target);
+    // event.preventDefault();
   });
   parentElement.append(submitButton);
 }
+
+buttonParentElement = document.getElementById('buttons');
+//add the two button for the score and to reset:
+var resetButton = document.createElement('button');
+resetButton.innerHTML = 'Reset';
+
+//set the reset button to reload the page
+resetButton.addEventListener('click', function() {
+  location.reload();
+});
+
+//set the score button to take us to score page
+var scoreButton = document.createElement('button');
+scoreButton.innerHTML = 'Score';
+scoreButton.addEventListener('click', function() {
+  window.location.href = 'scoreboard.html';
+});
+buttonParentElement.append(resetButton);
+buttonParentElement.append(scoreButton);
 
 
 // parentElement = document.getElementById('quiz');
