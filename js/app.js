@@ -3,6 +3,7 @@
 var categoryImg = [];
 var parentElement;
 var imageParent;
+var score = 0;
 
 
 
@@ -161,6 +162,23 @@ function clickHandler() {
   });
   parentElement.append(resetButton);
   parentElement.append(scoreButton);
+
+  var submitButton = document.createElement('button');
+  submitButton.innerHTML = 'Submit Answers';
+
+  //set the submit answers button to intake answers
+  submitButton.addEventListener('click', function(event) {
+    var answer = event.target.Germany.value;
+    var p = document.createElement('p');
+    p.textContent = answer;
+    if (answer === 'Germany') {
+      score++;
+    }
+    parentElement.append(p);
+    console.log(answer);
+    console.log(event.target);
+  });
+  parentElement.append(submitButton);
 }
 
 
@@ -198,7 +216,7 @@ function clickHandler() {
 //event listener
 //=====================================================================
 
-
+//
 
 
 
