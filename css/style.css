@@ -3,5 +3,67 @@
 }
 
 body {
-  background-color: #9aedbb;
+  /*background-color: #9aedbb;*/
+  background-image: url("../smart-quiz/img/mountainBackgound.jpg");
+  /*background-image: url("../smart-quiz/img/mountainBackgound.jpg");
+                             \smart-quiz\img
+  opacity: .3;
+  */
+}
+
+h1 {
+  text-align: center;
+}
+
+/* =======Nav Bar Styling==========  */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+    font-size: 18px;
+}
+
+/* ==========Images=============  */
+img {
+  width: 20%;
+  float: left;
+  padding: 10px
+  /*opacity: 0.5;
+  filter: alpha(opacity=50);*/
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+/*.us {
+  padding-left: 100px;
+}*/
+
+/* ==========Divs=============  */
+div {
+  padding: 10px;
+  clear: left;
+}
+
+/* ==========Footer=============  */
+footer {
+  text-align: center;
+  clear: left;
+}
+
+/* ==========Other=============  */
+.about {
+  /*font-size: 18px;*/
+  text-align: center;
 }
