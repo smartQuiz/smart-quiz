@@ -12,38 +12,42 @@
     <nav>
       <ul>
         <ul class="topnav" id="myTopnav">
-          <li><a c href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="game.html">Game</a></li>
-          <li><a c href="scoreboard.html">Score Board</a></li>
+          <li><a href="scoreboard.html">Score Board</a></li>
           <li><a href="aboutus.html">About</a></li>
         </ul>
       </nav>
 
   <header>
     <h1>Welome to the Smart Quiz site!</h1>
+    <br>
   </header>
 
 
   <main>
 
-    <section>
-      <p>Game instructions:</p>
+    <section class="instructions">
+      <h3>Game instructions:</h3>
+      <br>
+      <p>The instructions are simple, you just input your name in the text box on this page and then click the button to navigate to the next page, if you are going to take the quiz. You will just click on one of the 3 images and it will populate a quiz based on your topic image choice. Just answer the questions and click submit, then you will have the option to check your score and the anwers on the score page.
     </section>
-
+    <br>
       <form id="entryID">
         <label for="name">Enter Your Name:</label>
         <input id="userName" name="name" type="text">
-        <button id="next-button" type="submit" onclick="window.location.href='game.html'">Take the Quiz</button>
+        <button id="next-button" type="submit">Next page</button>
       </form>
 
 
 
   </main>
-
+  <br>
+</body>
 <footer>
   <p>Smart Quiz &copy 2017</p>
 </footer>
 
 <script src="js/user.js"></script>
-</body>
+
 </html>

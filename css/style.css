@@ -1,6 +1,11 @@
 
 *{
   margin: 0px;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
 }
 
 /*Navigation bar for all pages*/
@@ -27,7 +32,16 @@ ul.topnav li a {
 
 ul.topnav li a:hover {background-color: lightgray;}
 
+/* ====Index content===== */
+.instructions {
+  font-family: sans-serif;
+  text-align: center;
+}
 
+/* ====Form:======= */
+form {
+  text-align: center;
+}
 
 /*About Us Section*/
 #test{
@@ -91,4 +105,9 @@ ul.topnav li a:hover {background-color: lightgray;}
   100% {
     opacity:1;
   }
+}
+/* ==========Footer=============  */
+footer {
+  text-align: center;
+  clear: left;
 }
