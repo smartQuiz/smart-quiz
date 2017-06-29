@@ -1,4 +1,4 @@
-'user strict';
+'use strict';
 
 //render that user and score to the score board page
 
