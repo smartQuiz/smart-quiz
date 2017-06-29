@@ -1,0 +1,53 @@
+*{
+  margin: 0px;
+}
+
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: rgb(49, 145, 39);
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+ul.topnav li a:hover {background-color: lightgray;}
+
+ul.topnav li.icon {display: none;}
+
+
+
+
+/*About Us Section*/
+
+.aboutpics{
+  height: 300px;
+  width: 300px;
+
+}
+.abparagraph{
+  height: 300px;
+  width: 400px;
+  text-align: center;
+
+}
+.aboutdiv{
+  background-color: purple;
+  width: 100%;
+  height: 350px
+  border: 9px solid green;
+
+}
