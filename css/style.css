@@ -1,6 +1,11 @@
 
 *{
   margin: 0px;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
 }
 
 /*Navigation bar for all pages*/
@@ -28,8 +33,10 @@ ul.topnav li a {
 ul.topnav li a:hover {background-color: lightgray;}
 
 
+
 /*
 ------------------------About Us Section-------------------------*/
+
 
 .picbox{
 
@@ -127,4 +134,47 @@ ul.topnav li a:hover {background-color: lightgray;}
 #whiteboardbox img{
   height: 200px;
   width: 400px;
+
+/* =======Index content=========*/
+.instructions {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.indexPic {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: :  40px;
+}
+
+
+.indexMain {
+width: 950px;
+height: 350px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-top:  40px;
+}
+
+#main{
+  height: 900px;
+}
+/* ====Form:======= */
+form {
+  text-align: center;
+}
+
+/* ==========Footer=============  */
+/*.copyright {
+  width: 950px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+footer {
+  text-align: center;
+
 }
