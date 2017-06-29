@@ -1,7 +1,11 @@
 *{
   margin: 0px;
+  font-family: sans-serif;
 }
 
+h1 {
+  text-align: center;
+}
 
 ul.topnav {
   list-style-type: none;
@@ -28,7 +32,20 @@ ul.topnav li a:hover {background-color: lightgray;}
 
 ul.topnav li.icon {display: none;}
 
+/* ====Index content===== */
+.instructions {
+  font-family: sans-serif;
+  text-align: center;
+}
 
+/* ====Form:======= */
+form {
+  text-align: center;
+}
+
+/*#entryID {
+  align-items: center;
+}*/
 
 
 /*About Us Section*/
@@ -50,4 +67,10 @@ ul.topnav li.icon {display: none;}
   height: 350px
   border: 9px solid green;
 
+}
+
+/* ==========Footer=============  */
+footer {
+  text-align: center;
+  clear: left;
 }
