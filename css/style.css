@@ -1,5 +1,10 @@
 * {
   margin: 0px;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
 }
 
 
@@ -27,10 +32,14 @@ ul.topnav li a {
   font-size: 20px;
 }
 
+<<<<<<< HEAD
 ul.topnav li a:hover {
   background-color: lightgray;
 }
 
+=======
+ul.topnav li a:hover {background-color: lightgray;}
+>>>>>>> 3c6b02e3684046d055b3a2dba26e96c85b50fa59
 
 /*About Us Section*/
 
@@ -101,6 +110,7 @@ ul.topnav li a:hover {
   }
 }
 
+<<<<<<< HEAD
 
 /*//=============================GAME.HTML=========================================*/
 body {
@@ -153,3 +163,47 @@ h1 {
 }
 
 /*//=============================GAME.HTML=========================================*/
+=======
+/* =======Index content=========*/
+.instructions {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.indexPic {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: :  40px;
+}
+
+
+.indexMain {
+width: 950px;
+height: 350px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-top:  40px;
+}
+
+#main{
+  height: 900px;
+}
+/* ====Form:======= */
+form {
+  text-align: center;
+}
+
+/* ==========Footer=============  */
+/*.copyright {
+  width: 950px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+footer {
+  text-align: center;
+}
+>>>>>>> 3c6b02e3684046d055b3a2dba26e96c85b50fa59
