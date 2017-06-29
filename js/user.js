@@ -22,7 +22,7 @@ userNameID.addEventListener('submit', function(event) {
 
   //set the user name to local storage
   var stringfiedUser = JSON.stringify(userName);
-  localStorage.setItem(userName, stringfiedUser);
+  localStorage.setItem('name', stringfiedUser);
 
   // newUser.score = localStorage.getItem('parsedScore');
 });

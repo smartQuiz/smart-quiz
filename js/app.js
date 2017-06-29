@@ -279,15 +279,21 @@ function setScoreStorage() {
     this.score = score;
   };
 
-  var stringedUser = localStorage.getItem('mike');
+//get the user name from local storage
+  var stringedUser = localStorage.getItem('name');
   var parsedUser = JSON.parse(stringedUser);
   console.log(parsedUser);
-
+//create a new user object with the user name from the local storage and assign the current score to it
   var newUser = new User(parsedUser);
   newUser.score = score;
-  //set the user name to local storage
+  console.log(newUser);
+
+  //save the user object to local storage with name and score
   var stringfiedUser = JSON.stringify(newUser);
-  localStorage.setItem(userName, stringfiedUser);
+  localStorage.setItem(newUser.name, stringfiedUser);
+
+  //render that user and score to the score board page
+
 
 
 
