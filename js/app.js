@@ -13,11 +13,11 @@ var travelInputs = [];
 var popInputs = [];
 
 var sportsQuestions = [
-  'Who won the last soccer world cup in Brazil 2014? Your choices are: a, b, c',
-  'How many times did USA made it to the world cup?',
-  'Who won the MLS cup in 2016?',
-  'Which famous player helped Napoli win their first ever championship?',
-  'Who won the champions league this year?'
+  'Who won the last soccer world cup in Brazil 2014? Brazil, Italy, USA or Germany.',
+  'How many times did USA made it to the world cup? 9, 10, 6 or 12.',
+  'Who won the MLS cup in 2016? LA galaxy, Seattle Sounders, DC United or NY city FC.',
+  'Which famous player helped Napoli win their first ever championship? Diego Maradona, Messi, Ronaldo or david beckham.',
+  'Who won the champions league this year? Barcelona, Manchester united, Real Madrid or Juventus.'
 ];
 var sportsAnswers = ['germany', '10', 'seattle sounders', 'diego maradona', 'real madrid'];
 var sportIds = ['germany', 'ten', 'seattlesounders', 'diegomaradona', 'realmadrid'];

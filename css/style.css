@@ -88,7 +88,6 @@ ul.topnav li a:hover {
 
 /*-----------------------------------------About Us Section-----------------------------------*/
 
-
 .picbox {
   width: 350px;
   height: 100%;
@@ -136,9 +135,11 @@ ul.topnav li a:hover {
   position: relative;
   top: 40px;
 }
+
 #sugeyID {
   margin-bottom: 40px;
 }
+
 .aboutdiv {
   background-color: rgba(49, 145, 39, 0.4);
   width: 950px;
@@ -160,10 +161,9 @@ ul.topnav li a:hover {
 }
 
 
-
 /*--------------------------scoreboard-----------------------------*/
 
-*/ #scoremain {
+#scoremain {
   height: 800px;
   /*padding-bottom: 30px;*/
 }
@@ -216,7 +216,7 @@ body {
   margin-right: 10%;
 }
 
-#headerGame h1 {
+#gameQuiz {
   text-align: center;
   margin: 80px 0;
   font-family: 'Raleway', sans-serif;
@@ -227,7 +227,7 @@ body {
   width: 1000px;
   height: 500px;
   background-color: #cdcbcb;
-  margin: auto
+  margin: auto;
 }
 
 #img1, #img2, #img3 {
@@ -293,14 +293,9 @@ input {
 }
 
 footer {
-
   position: relative;
   left: 45%;
   margin: 30px;
-
-  text-align: center;
-
-
 }
 
 #myTopnav {
