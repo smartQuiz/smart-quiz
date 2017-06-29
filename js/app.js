@@ -269,9 +269,27 @@ var stringifiedScore;
 // to set to local storage
 function setScoreStorage() {
 
-  var stringedUserObject = localStorage.getItem(userName);
-  var parsedUserObject = JSON.parse(stringedUserObject);
-  console.log(parsedUserObject);
+//to get the data from storage
+  // var stringedUserObject = localStorage.getItem(userName.key(2));
+  // var parsedUserObject = JSON.parse(stringedUserObject);
+  // console.log(parsedUserObject);
+
+  function User(name, score) {
+    this.name = name,
+    this.score = score;
+  };
+
+  var stringedUser = localStorage.getItem('mike');
+  var parsedUser = JSON.parse(stringedUser);
+  console.log(parsedUser);
+
+  var newUser = new User(parsedUser);
+  newUser.score = score;
+  //set the user name to local storage
+  var stringfiedUser = JSON.stringify(newUser);
+  localStorage.setItem(userName, stringfiedUser);
+
+
 
 
 
