@@ -2,6 +2,10 @@
   margin: 0px;
   font-family: sans-serif;
 }
+body {
+  background-image: url("../img/lightning.png");
+  background-repeat: no-repeat;
+}
 
 h1 {
   text-align: center;
@@ -53,7 +57,6 @@ form {
 .aboutpics{
   height: 300px;
   width: 300px;
-
 }
 .abparagraph{
   height: 300px;
