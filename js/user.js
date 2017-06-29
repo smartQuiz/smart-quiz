@@ -1,4 +1,4 @@
-'user strict';
+'use strict';
 
 var userName;
 //=============================SUBMIT EVENT FOR INDEX.HTML USER NAME=========================================

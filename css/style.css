@@ -1,23 +1,20 @@
-
-*{
+* {
   margin: 0px;
-  font-family: sans-serif;
 }
 
-h1 {
-  text-align: center;
-}
 
 /*Navigation bar for all pages*/
+
 ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-
 }
 
-ul.topnav li {float: left;}
+ul.topnav li {
+  float: left;
+}
 
 ul.topnav li a {
   display: inline-block;
@@ -30,7 +27,10 @@ ul.topnav li a {
   font-size: 20px;
 }
 
-ul.topnav li a:hover {background-color: lightgray;}
+ul.topnav li a:hover {
+  background-color: lightgray;
+}
+
 
 
 
@@ -38,22 +38,25 @@ ul.topnav li a:hover {background-color: lightgray;}
 ------------------------About Us Section-------------------------*/
 
 
-.picbox{
 
-  width:350px;
+
+.picbox {
+  width: 350px;
   height: 100%;
   float: left;
   position: relative;
   left: 110px;
   top: 24px;
 }
-.parabox{
-  background-color:rgb(228, 228, 228);
-  width:540px;
+
+.parabox {
+  background-color: rgb(228, 228, 228);
+  width: 540px;
   height: 100%;
   float: right;
 }
-.aboutpics{
+
+.aboutpics {
   height: 300px;
   width: 300px;
   margin-left: auto;
@@ -61,43 +64,60 @@ ul.topnav li a:hover {background-color: lightgray;}
   display: block;
 }
 
-.abparagraph{
+.abparagraph {
   font-size: 18px;
   width: 430px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
   display: block;
-
 }
 
-#rami{
+#rami {
   position: relative;
   top: 100px;
 }
-#sugey{
+
+#sugey {
   position: relative;
   top: 100px;
 }
-.aboutdiv{
+
+.aboutdiv {
   background-color: rgba(49, 145, 39, 0.4);
   width: 950px;
   height: 350px;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-top:  40px;
+  margin-top: 40px;
   animation: fadeIn 6.0s ease forwards;
 }
-@keyframes fadeIn{
+
+@keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
+
+
+/*//=============================GAME.HTML=========================================*/
+
+body {
+  background: url('http://cdn.wallpapersafari.com/39/79/rTJv8l.jpeg') no-repeat center center fixed;
+  overflow-x: hidden;
+}
+
+#imageContainer {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h1 {
 
 
 /*
@@ -134,47 +154,103 @@ ul.topnav li a:hover {background-color: lightgray;}
 #whiteboardbox img{
   height: 200px;
   width: 400px;
+  }
 
 /* =======Index content=========*/
 .instructions {
   font-family: sans-serif;
+
   text-align: center;
+  margin: 80px 0;
+  font-family: 'Raleway', sans-serif;
+  animation: roll 3s;
 }
 
-.indexPic {
-  margin-left: auto;
-  margin-right: auto;
+#quiz {
+  width: 1000px;
+  height: 500px;
+  background-color: #cdcbcb;
+  margin: auto
+}
+
+#img1, #img2, #img3 {
+  width: 30%;
+  height: 300px;
+  margin: 10px;
+  border-radius: 30px;
+  transition: 0.5s;
+  margin-bottom: 60px;
+}
+
+#img1:hover, #img2:hover, #img3:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(30deg);
+  }
+  66% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+#reset {
+  font-size: 25px;
+  background-color: #eb2a2a;
+  padding: 10px;
+  color: white;
+  position: relative;
+  left: 48%;
+  margin: 30px 0;
+}
+
+#submit {
+  font-size: 25px;
+  background-color: #32a62f;
+  padding: 10px;
+  color: white;
+  position: relative;
+  left: 100px;
+  top: 15px;
+}
+
+label {
   display: block;
-  margin-bottom: :  40px;
+  font-size: 19px;
+  font-family: 'Comfortaa', cursive;
+  padding: 10px;
 }
 
-
-.indexMain {
-width: 950px;
-height: 350px;
-margin-left: auto;
-margin-right: auto;
-display: block;
-margin-top:  40px;
+input {
+  position: relative;
+  width: 300px;
+  margin: 10px 5px;
 }
-
-#main{
-  height: 900px;
-}
-/* ====Form:======= */
-form {
-  text-align: center;
-}
-
-/* ==========Footer=============  */
-/*.copyright {
-  width: 950px;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-}*/
 
 footer {
+
+  position: relative;
+  left: 45%;
+  margin: 30px;
+
   text-align: center;
 
+
 }
+
+#myTopnav {
+  position: relative;
+  left: 33%;
+  margin: 30px;
+}
+
+
+/*//=============================GAME.HTML=========================================*/
