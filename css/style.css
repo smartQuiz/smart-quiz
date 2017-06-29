@@ -88,6 +88,7 @@ ul.topnav li a:hover {
 
 /*-----------------------------------------About Us Section-----------------------------------*/
 
+
 .picbox {
   width: 350px;
   height: 100%;
@@ -159,6 +160,7 @@ ul.topnav li a:hover {
 }
 
 
+
 /*--------------------------scoreboard-----------------------------*/
 
 */ #scoremain {
@@ -214,7 +216,7 @@ body {
   margin-right: 10%;
 }
 
-#headerGame {
+#headerGame h1 {
   text-align: center;
   margin: 80px 0;
   font-family: 'Raleway', sans-serif;
@@ -291,9 +293,14 @@ input {
 }
 
 footer {
+
   position: relative;
   left: 45%;
   margin: 30px;
+
+  text-align: center;
+
+
 }
 
 #myTopnav {
