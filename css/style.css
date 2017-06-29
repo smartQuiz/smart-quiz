@@ -119,18 +119,21 @@ display: block;
 margin-top:  40px;
 }
 
+#main{
+  height: 900px;
+}
 /* ====Form:======= */
 form {
   text-align: center;
 }
 
 /* ==========Footer=============  */
-.copyright {
+/*.copyright {
   width: 950px;
   height: 100px;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 footer {
   text-align: center;
