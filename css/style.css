@@ -3,7 +3,61 @@
 }
 
 
-/*Navigation bar for all pages*/
+/*========================================INDEX.HTML===============================================*/
+
+.instructions {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.indexPic {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: : 40px;
+}
+
+.instructions p {
+  margin: 30px;
+  text-align: left;
+  position: relative;
+  left: 170px;
+}
+
+.indexMain {
+  width: 950px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 40px;
+}
+
+#entryID {
+  position: relative;
+  left: 120px;
+  margin: 50px;
+}
+
+#main {
+  height: 900px;
+}
+
+#headerIndex {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#indexLabel {
+  display: inline;
+}
+
+
+/*========================================INDEX.HTML===============================================*/
+
+
+/*=============================Navigation bar for all pages==========================================*/
 
 ul.topnav {
   list-style-type: none;
@@ -32,11 +86,7 @@ ul.topnav li a:hover {
 }
 
 
-/*About Us Section*/
-
-#test {
-  vertical-align: middle;
-}
+/*-----------------------------------------About Us Section-----------------------------------*/
 
 .picbox {
   width: 350px;
@@ -81,6 +131,13 @@ ul.topnav li a:hover {
   top: 100px;
 }
 
+#abritni {
+  position: relative;
+  top: 40px;
+}
+#sugeyID {
+  margin-bottom: 40px;
+}
 .aboutdiv {
   background-color: rgba(49, 145, 39, 0.4);
   width: 950px;
@@ -102,10 +159,53 @@ ul.topnav li a:hover {
 }
 
 
+/*--------------------------scoreboard-----------------------------*/
+
+*/ #scoremain {
+  height: 800px;
+  /*padding-bottom: 30px;*/
+}
+
+#showScore {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  padding-top: 200px;
+  height: 386px;
+  width: 600px;
+}
+
+#showScore h1 {
+  color: black;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 50px;
+}
+
+#whiteboardbox {
+  background-image: url('../img/whiteboard.jpg');
+  height: 486px;
+  width: 700px;
+  /*border: 4px solid purple;*/
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-size: contain;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+#whiteboardbox img {
+  height: 200px;
+  width: 400px;
+}
+
+
 /*//=============================GAME.HTML=========================================*/
 
 body {
-  background: url('http://cdn.wallpapersafari.com/39/79/rTJv8l.jpeg') no-repeat center center fixed;
+  /*background: url('http://cdn.wallpapersafari.com/39/79/rTJv8l.jpeg') no-repeat center center fixed;*/
+  background-color: rgba(133, 205, 89, 0.4);
   overflow-x: hidden;
 }
 
@@ -114,7 +214,7 @@ body {
   margin-right: 10%;
 }
 
-h1 {
+#headerGame {
   text-align: center;
   margin: 80px 0;
   font-family: 'Raleway', sans-serif;
