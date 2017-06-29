@@ -32,10 +32,12 @@ ul.topnav li a {
 
 ul.topnav li a:hover {background-color: lightgray;}
 
-/*About Us Section*/
-#test{
-  vertical-align:middle;
-}
+
+
+/*
+------------------------About Us Section-------------------------*/
+
+
 .picbox{
 
   width:350px;
@@ -96,6 +98,43 @@ ul.topnav li a:hover {background-color: lightgray;}
   }
 }
 
+
+
+/*
+--------------------------scoreboard-----------------------------*/
+#scoremain{
+  height: 800px
+}
+#showScore{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  padding-top: 200px;
+  height: 386px;
+  width: 600px;
+}
+#showScore h1{
+  color:black;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 50px;
+}
+#whiteboardbox{
+  background-image: url('../img/whiteboard.jpg');
+  height: 486px;
+  width: 700px;
+  border: 4px solid purple;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-size: contain;
+  margin-top: 100px;
+}
+
+#whiteboardbox img{
+  height: 200px;
+  width: 400px;
+
 /* =======Index content=========*/
 .instructions {
   font-family: sans-serif;
@@ -137,4 +176,5 @@ form {
 
 footer {
   text-align: center;
+
 }
