@@ -137,10 +137,10 @@ function clickHandler() {
   clicked = event.target.getAttribute('id');
   console.log('clicked ' + clicked);
   if (clicked === 'img1') {
-    sportQuiz();
+    popQuiz();
     imageParent.removeEventListener('click', clickHandler);
   } else if (clicked === 'img2') {
-    popQuiz();
+    sportQuiz();
     imageParent.removeEventListener('click', clickHandler);
   } else {
     travelQuiz();
@@ -151,6 +151,7 @@ function clickHandler() {
 
 //submit answers button
 var submitButton = document.createElement('button');
+submitButton.setAttribute('id', 'submit');
 submitButton.innerHTML = 'Submit Answers';
 
 var quizForm = document.getElementById('quiz');
@@ -161,7 +162,7 @@ quizForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
   //======================LTRIGGER APPROPRIATE QUIZ FOR EACH IMAGE=========================
-  if (clicked === 'img1') {
+  if (clicked === 'img2') {
     //======================SPORT QUIZ=========================
     var germany = event.target.germany.value.toLowerCase();
     sportInputs.push(germany);
@@ -188,7 +189,7 @@ quizForm.addEventListener('submit', function(event) {
     console.log(diegomaradona);
     console.log(realmadrid);
 
-  } else if (clicked === 'img2') {
+  } else if (clicked === 'img1') {
     //======================POP QUIZ=========================
     var taylorswift = event.target.taylorswift.value.toLowerCase();
     popInputs.push(taylorswift);
@@ -249,6 +250,7 @@ quizForm.addEventListener('submit', function(event) {
 buttonParentElement = document.getElementById('buttons');
 //add the two button for the score and to reset:
 var resetButton = document.createElement('button');
+resetButton.setAttribute('id', 'reset');
 resetButton.innerHTML = 'Reset';
 
 //set the reset button to reload the page
@@ -257,13 +259,13 @@ resetButton.addEventListener('click', function() {
 });
 
 //set the score button to take us to score page
-var scoreButton = document.createElement('button');
-scoreButton.innerHTML = 'Score';
-scoreButton.addEventListener('click', function() {
-  window.location.href = 'scoreboard.html';
-});
+// var scoreButton = document.createElement('button');
+// scoreButton.innerHTML = 'Score';
+// scoreButton.addEventListener('click', function() {
+//   window.location.href = 'scoreboard.html';
+// });
 buttonParentElement.append(resetButton);
-buttonParentElement.append(scoreButton);
+// buttonParentElement.append(scoreButton);
 
 var parsedScore;
 var storageScore;

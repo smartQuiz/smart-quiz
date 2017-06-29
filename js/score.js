@@ -15,8 +15,8 @@ var parsedUserObject = JSON.parse(stringedUserObject);
 console.log(parsedUserObject);
 
 
-newHeader.textContent = 'Well done ' + parsedUserObject.name;
-secondHeader.textContent = 'Your score is: ' + parsedUserObject.score;
+newHeader.textContent = 'Thank you for taking the quiz ' + parsedUserObject.name + '!';
+secondHeader.textContent = 'Your score is: ' + parsedUserObject.score + '.';
 console.log(newHeader);
 console.log(secondHeader);
 

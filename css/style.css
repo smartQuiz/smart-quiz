@@ -1,10 +1,5 @@
 * {
   margin: 0px;
-  font-family: sans-serif;
-}
-
-h1 {
-  text-align: center;
 }
 
 
@@ -32,14 +27,10 @@ ul.topnav li a {
   font-size: 20px;
 }
 
-<<<<<<< HEAD
 ul.topnav li a:hover {
   background-color: lightgray;
 }
 
-=======
-ul.topnav li a:hover {background-color: lightgray;}
->>>>>>> 3c6b02e3684046d055b3a2dba26e96c85b50fa59
 
 /*About Us Section*/
 
@@ -110,13 +101,14 @@ ul.topnav li a:hover {background-color: lightgray;}
   }
 }
 
-<<<<<<< HEAD
 
 /*//=============================GAME.HTML=========================================*/
-body {
-  background: url('https://wallpaperscraft.com/image/paper_old_white_surface_69706_1920x1080.jpg') no-repeat center center fixed;
 
+body {
+  background: url('http://cdn.wallpapersafari.com/39/79/rTJv8l.jpeg') no-repeat center center fixed;
+  overflow-x: hidden;
 }
+
 #imageContainer {
   margin-left: 10%;
   margin-right: 10%;
@@ -127,6 +119,13 @@ h1 {
   margin: 80px 0;
   font-family: 'Raleway', sans-serif;
   animation: roll 3s;
+}
+
+#quiz {
+  width: 1000px;
+  height: 500px;
+  background-color: #cdcbcb;
+  margin: auto
 }
 
 #img1, #img2, #img3 {
@@ -158,52 +157,50 @@ h1 {
   }
 }
 
-#buttons {
-  margin: auto;
+#reset {
+  font-size: 25px;
+  background-color: #eb2a2a;
+  padding: 10px;
+  color: white;
+  position: relative;
+  left: 48%;
+  margin: 30px 0;
 }
 
-/*//=============================GAME.HTML=========================================*/
-=======
-/* =======Index content=========*/
-.instructions {
-  font-family: sans-serif;
-  text-align: center;
+#submit {
+  font-size: 25px;
+  background-color: #32a62f;
+  padding: 10px;
+  color: white;
+  position: relative;
+  left: 100px;
+  top: 15px;
 }
 
-.indexPic {
-  margin-left: auto;
-  margin-right: auto;
+label {
   display: block;
-  margin-bottom: :  40px;
+  font-size: 19px;
+  font-family: 'Comfortaa', cursive;
+  padding: 10px;
 }
 
-
-.indexMain {
-width: 950px;
-height: 350px;
-margin-left: auto;
-margin-right: auto;
-display: block;
-margin-top:  40px;
+input {
+  position: relative;
+  width: 300px;
+  margin: 10px 5px;
 }
-
-#main{
-  height: 900px;
-}
-/* ====Form:======= */
-form {
-  text-align: center;
-}
-
-/* ==========Footer=============  */
-/*.copyright {
-  width: 950px;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-}*/
 
 footer {
-  text-align: center;
+  position: relative;
+  left: 45%;
+  margin: 30px;
 }
->>>>>>> 3c6b02e3684046d055b3a2dba26e96c85b50fa59
+
+#myTopnav {
+  position: relative;
+  left: 33%;
+  margin: 30px;
+}
+
+
+/*//=============================GAME.HTML=========================================*/
