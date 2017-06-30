@@ -13,16 +13,10 @@ userNameID.addEventListener('submit', function(event) {
   userName = event.target.name.value;
 
   //=============================USER CONSTRUCTOR=========================================
-  // function User(name, score) {
-  //   this.name = name,
-  //   this.score = 0;
-  // };
 
-  // var newUser = new User(userName);
 
   //set the user name to local storage
   var stringfiedUser = JSON.stringify(userName);
   localStorage.setItem('name', stringfiedUser);
 
-  // newUser.score = localStorage.getItem('parsedScore');
 });
