@@ -53,6 +53,14 @@
   display: inline;
 }
 
+#next-button{
+  height:50px;
+  width:130px;
+  font-size: 15px;
+  background-color:rgb(49, 145, 39);
+  border:none;
+  color: white;
+}
 
 /*========================================INDEX.HTML===============================================*/
 
@@ -78,7 +86,7 @@ ul.topnav li a {
   padding: 14px 16px;
   text-decoration: none;
   transition: 0.3s;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 ul.topnav li a:hover {
@@ -165,7 +173,6 @@ ul.topnav li a:hover {
 
 #scoremain {
   height: 800px;
-  /*padding-bottom: 30px;*/
 }
 
 #showScore {
@@ -188,7 +195,6 @@ ul.topnav li a:hover {
   background-image: url('../img/whiteboard.jpg');
   height: 486px;
   width: 700px;
-  /*border: 4px solid purple;*/
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -202,15 +208,31 @@ ul.topnav li a:hover {
   width: 400px;
 }
 
+#tryagain{
+  height:50px;
+  width:120px;
+  font-size: 20px;
+  background-color:rgb(49, 145, 39);
+  border:none;
+  color: white;
+  position: relative;
+  left : 50%;
+  bottom: 250px;
+}
 
 /*//=============================GAME.HTML=========================================*/
 
 body {
-  /*background: url('http://cdn.wallpapersafari.com/39/79/rTJv8l.jpeg') no-repeat center center fixed;*/
   background-color: rgba(133, 205, 89, 0.4);
   overflow-x: hidden;
 }
-
+.titles{
+  display: inline;
+  margin: 0 175px;
+  position: relative;
+  left: 110px;
+  bottom: 50px;
+}
 #imageContainer {
   margin-left: 10%;
   margin-right: 10%;

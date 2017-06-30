@@ -23,28 +23,24 @@ var sportsAnswers = ['germany', '10', 'seattle sounders', 'diego maradona', 'rea
 var sportIds = ['germany', 'ten', 'seattlesounders', 'diegomaradona', 'realmadrid'];
 
 var travelQuestions = [
-  'What country is mt everest in? Your choices are: a, b, c',
-  'What is mt st helens famous for',
-  'What famous art museum is in Paris France?',
-  'Where are the most famous pyramids located?',
-  'What famous landmark that can be seen from space is in China?'
+  'What country is mt everest in?  Nepal, India, Turkey',
+  'What is mt st helens famous for? Being small, Being a volcano, Tallest Mountain ' ,
+  'What famous art museum is in Paris France? The pink door, Le louvre, The Acropolis',
+  'Where are the most famous pyramids located? Spain, Egypt, Montana',
+  'What famous landmark that can be seen from space is in China? Temple of Heaven, The Great Wall, Forbidden City'
 ];
 var travelAnswers = ['nepal', 'being a volcano', 'le louvre', 'egypt', 'the great wall'];
 var travelIds = ['nepal', 'beingavolcano', 'lelouvre', 'egypt', 'thegreatwall'];
 
 var popQuestions = [
-  'This singer sat in a Blank Space while trying to shake it off as she sang We are never getting back together. Who is she?',
-  'In the Big Bang Sheldon Cooper and Leonard Hofstadter lived next door to a pretty waitress named?',
-  'Queen Daenerys Targaryen is also known as the mother of ?',
-  'What famous actress plays Katniss Everdeen in the hunger games?',
-  'Doctor who thinks these are cool?'
+  'This singer sat in a Blank Space while trying to shake it off as she sang We are never getting back together. Who is she? Katie Harry, Taylor Swift, Justin Beaver',
+  'In the Big Bang Sheldon Cooper and Leonard Hofstadter lived next door to a pretty waitress named? Sam, Penny, Jan, ',
+  'Queen Daenerys Targaryen is also known as the mother of ? Two boys, A girl, Dragons',
+  'What famous actress plays Katniss Everdeen in the hunger games? Mariah Carey, Jennifer Grey or Jennifer Lawrence',
+  'Doctor who thinks these are cool? Bow Ties, Red Cars, Marbles'
 ];
 var popAnswers = ['taylor swift', 'penny', 'dragons', 'jennifer lawrence', 'bow ties'];
 var popIds = ['taylorswift', 'penny', 'dragons', 'jenniferlawrence', 'bowties'];
-
-//create a user and grab it from the welcome page
-// var user = document.getElementById('userName');
-
 
 
 //========================================SPORT QUIZ===============================================
@@ -71,7 +67,6 @@ function sportQuiz() {
   }
 }
 
-// sportQuiz();
 //========================================TRAVEL QUIZ===============================================
 
 function travelQuiz() {
@@ -95,8 +90,6 @@ function travelQuiz() {
     quiz.append(submitButton);
   }
 }
-
-// travelQuiz();
 
 //========================================POP-CULTURE QUIZ===============================================
 
@@ -122,8 +115,6 @@ function popQuiz() {
   }
 }
 
-// popQuiz();
-
 
 //========================================EVENT LISTENER===============================================
 
@@ -135,7 +126,6 @@ imageParent.addEventListener('click', clickHandler);
 
 function clickHandler() {
   clicked = event.target.getAttribute('id');
-  console.log('clicked ' + clicked);
   if (clicked === 'img1') {
     popQuiz();
     imageParent.removeEventListener('click', clickHandler);
@@ -180,15 +170,6 @@ quizForm.addEventListener('submit', function(event) {
         score++;
       }
     }
-    console.log(score);
-
-
-    console.log(germany);
-    console.log(ten);
-    console.log(seattlesounders);
-    console.log(diegomaradona);
-    console.log(realmadrid);
-
   } else if (clicked === 'img1') {
     //======================POP QUIZ=========================
     var taylorswift = event.target.taylorswift.value.toLowerCase();
@@ -207,13 +188,6 @@ quizForm.addEventListener('submit', function(event) {
         score++;
       }
     }
-    console.log(score);
-    console.log(taylorswift);
-    console.log(penny);
-    console.log(dragons);
-    console.log(jenniferlawrence);
-    console.log(bowties);
-
   } else {
     //======================TRAVEL QUIZ=========================
     var nepal = event.target.nepal.value.toLowerCase();
@@ -232,12 +206,7 @@ quizForm.addEventListener('submit', function(event) {
         score++;
       }
     }
-    console.log(score);
-    console.log(nepal);
-    console.log(beingavolcano);
-    console.log(lelouvre);
-    console.log(egypt);
-    console.log(thegreatwall);
+
   }
   setScoreStorage();
   //send the user to the score page
@@ -258,14 +227,8 @@ resetButton.addEventListener('click', function() {
   location.reload();
 });
 
-//set the score button to take us to score page
-// var scoreButton = document.createElement('button');
-// scoreButton.innerHTML = 'Score';
-// scoreButton.addEventListener('click', function() {
-//   window.location.href = 'scoreboard.html';
-// });
+
 buttonParentElement.append(resetButton);
-// buttonParentElement.append(scoreButton);
 
 var parsedScore;
 var storageScore;
@@ -273,12 +236,6 @@ var stringifiedScore;
 //=============================LOCAL STORAGE=========================================
 // to set to local storage
 function setScoreStorage() {
-
-  //to get the data from storage
-  // var stringedUserObject = localStorage.getItem(userName.key(2));
-  // var parsedUserObject = JSON.parse(stringedUserObject);
-  // console.log(parsedUserObject);
-
   function User(name, score) {
     this.name = name,
       this.score = score;
@@ -287,31 +244,13 @@ function setScoreStorage() {
   //get the user name from local storage
   var stringedUser = localStorage.getItem('name');
   var parsedUser = JSON.parse(stringedUser);
-  console.log(parsedUser);
   //create a new user object with the user name from the local storage and assign the current score to it
   var newUser = new User(parsedUser);
   newUser.score = score;
-  console.log(newUser);
-
   //save the user object to local storage with name and score
   var stringfiedUser = JSON.stringify(newUser);
   localStorage.setItem('userObject', stringfiedUser);
 
-
-
-
-
-
-  // stringifiedScore = JSON.stringify(score);
-  // localStorage.setItem('score', stringifiedScore);
-  // storageScore = localStorage.getItem('score');
-  // parsedScore = JSON.parse(storageScore);
-  // =============================USER CONSTRUCTOR=========================================
-  // function User(name, score) {
-  //   this.name = localStorage.getItem('name'),
-  //   this.score = score;
-  // };
-  // var newUser = new User();
   return parsedScore;
 }
 
@@ -322,46 +261,6 @@ function setUserStorage(userName) {
   var parsedUser = JSON.parse(userName);
   return parsedUser;
 }
-// to get from storage
-// function getScoreStorage () {
-//   // storageScore = localStorage.getItem('score');
-//   var parsedScore = JSON.parse(storageScore);
-//   return parsedScore;
-// }
-
-
-
-
-//===================================================================
-//second attempt
-
-//function for each of the three quizes to create the questions and answers and render it to the page.
-
-//quiz 1
-
-// function sportsQuiz () {
-//
-// }
-
-//===================================================================
-//first attempt
-
-//function to populate the quiz field render()
-
-// function render() {
-//   parentElement = document.getElementById('quiz');
-//   var h1 = document.createElement('h1');
-//   h1.textContent = 'This is the first question?';
-//   parentElement.append(h1);
-// }
-//
-// render();
-//event listener
-//=====================================================================
-
-//
-
-
 
 function ImageForCat(imgName, path, category) {
   this.imgName = imgName;
